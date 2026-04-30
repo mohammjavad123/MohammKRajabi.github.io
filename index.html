@@ -1,363 +1,641 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="icon" href="images/logo.jpg">
-	<title>MOHAMMAD RAJABI</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Mohammad Rajabi — AI Engineer</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
+<body class="dark-mode">
 
-<body class="is-preload">
+  <div id="particles-js"></div>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+  <!-- Sidebar Nav -->
+  <nav id="sidebar-nav" aria-label="Section navigation">
+    <a href="#hero"       class="snav-item active" aria-label="Home"><i class="fas fa-home"></i><span>Home</span></a>
+    <a href="#about"      class="snav-item" aria-label="About"><i class="fas fa-user"></i><span>About</span></a>
+    <a href="#skills"     class="snav-item" aria-label="Skills"><i class="fas fa-code"></i><span>Skills</span></a>
+    <a href="#experience" class="snav-item" aria-label="Experience"><i class="fas fa-briefcase"></i><span>Work</span></a>
+    <a href="#projects"   class="snav-item" aria-label="Projects"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
+    <a href="#github"     class="snav-item" aria-label="GitHub"><i class="fab fa-github"></i><span>GitHub</span></a>
+    <a href="#contact"    class="snav-item" aria-label="Contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+  </nav>
 
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
+  <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+  <a href="images/cv.pdf" id="resume-btn" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
+  <button id="go-top" aria-label="Go to top"><i class="fas fa-rocket"></i></button>
 
-				<!-- Header -->
-				<header id="header">
-					<a href="index.html" class="logo"><strong>Portfolio</strong> personal page</a>
-					<ul class="icons">
-						<li><a href="https://github.com/mohammjavad123" class="icon brands fa-github"><span
-									class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/mohammadkazem-rajabi-3b5a121ab/"
-								class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					</ul>
-				</header>
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-greeting"><span class="mono cyan">~/amsterdam $</span> <span class="mono">whoami</span></p>
+      <h1>Mohammad<br/><em class="serif-name">Rajabi</em></h1>
+      <div class="hero-role">
+        <span class="mono cyan">&lt;</span><span id="typed-role">AI Engineer</span><span class="mono cyan"> /&gt;</span>
+      </div>
+      <p class="hero-bio">
+        Building production AI systems — RAG pipelines, LLM agents, and vector retrieval at scale.
+        2 years at <span class="cyan font-semibold">Pet24-7</span> (London), now based in
+        <span class="cyan">Amsterdam, Netherlands</span>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-glow">View Projects</a>
+        <a href="https://github.com/mohammjavad123" class="btn-ghost" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mohammadkazem-rajabi-3b5a121ab/" class="btn-ghost" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n">2<span class="hstat-unit">yrs</span></span>
+          <span class="hstat-l">production AI</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n">3<span class="hstat-unit">+</span></span>
+          <span class="hstat-l">AI systems shipped</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n">3</span>
+          <span class="hstat-l">vector DBs benchmarked</span>
+        </div>
+        <div class="hstat-sep"></div>
+        <div class="hstat">
+          <span class="hstat-n">7</span>
+          <span class="hstat-l">agent tools built</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span class="mono">scroll</span><div class="scroll-line"></div></div>
+  </section>
 
-				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h1>RAJABI MOHAMMAD<br />
-							</h1>
-							<p>Master student in AI </p>
-						</header>
-						<p>
-							I am a computer scientist with a strong background in artificial intelligence, specializing in machine
-							learning, computer vision, and natural language processing. During my studies and research, I worked on
-							advanced projects ranging from embodied AI and object detection to large language model pruning and
-							fine-tuning. Here you can find some of my projects and skills that reflect both academic research and
-							hands-on software engineering. I am deeply passionate about pushing the boundaries of AI, and this passion
-							constantly drives me to learn, improve, and take on new challenges. Outside of research, I am equally
-							dedicated to long-distance running and exploring the underground techno scene, which bring the same energy
-							and focus I apply to my work.
-						</p>
-						<ul class="actions">
-							<li><a href="images\cv.pdf" class="button">CV</span></a></li>
-							<li><a href="https://www.linkedin.com/in/mohammadkazem-rajabi-3b5a121ab/" class="button big">LinkedIn</a>
-							</li>
-							<li><a href="https://github.com/mohammjavad123" class="button">Github</span></a></li>
-						</ul>
-					</div>
-					<span class="image object">
-						<img src="images/brain.jpg" alt="" />
-					</span>
-				</section>
+  <!-- ═══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label"><span class="mono cyan">01.</span> about me</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text glass-card">
+          <p>
+            I'm an AI Engineer with 2 years of experience building production-grade LLM systems.
+            I specialize in retrieval-augmented generation, agentic AI frameworks, and the full
+            stack of infrastructure that makes AI work in production — from vector stores and
+            streaming APIs to policy enforcement and analytics.
+          </p>
+          <p>
+            During my MSc at the University of Padua, my thesis focused on using LLMs to orchestrate
+            tool-calling pipelines for multi-object navigation — work that directly shaped how I think
+            about agentic systems today.
+          </p>
+          <p>
+            Outside of engineering: long-distance running and underground techno.
+            Same focus, different BPM.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/mohammjavad123" target="_blank" class="alink">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mohammadkazem-rajabi-3b5a121ab/" target="_blank" class="alink">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:javvadrajabi@gmail.com" class="alink">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+        <div class="about-side">
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h4>MSc Computer Science</h4>
+              <p>University of Padua, Italy</p>
+              <span class="mono cyan small">2022 — 2024</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Amsterdam, Netherlands</h4>
+              <p>Open to on-site &amp; remote roles</p>
+              <span class="mono cyan small">Available now</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fas fa-rocket"></i></div>
+            <div>
+              <h4>Current Focus</h4>
+              <p>LangGraph agents &amp; RAG at scale</p>
+              <span class="mono cyan small">AI Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Skills</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon solid fa-brain"></span>
-							<div class="content">
-								<h3>Machine Learning</h3>
-								<p>Profound knowledge of machine learning and algorithms, in particular computer vision. As well as a
-									very good skill in using deep learning frameworks (PyTorch/Tensorflow).</p>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-code"></span>
-							<div class="content">
-								<h3>Software Engineering</h3>
-								<p>Front_end developer, as my work at MeNEW can show. Knowledge of coding
-									languages such as JS, React, NextJs, SQL, Node_Js.</p>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-voicemail"></span>
-							<div class="content">
-								<h3>Communication & Presentation</h3>
-								<p>During my studies i had the opportunity of presenting many different projects in order to develop a
-									very useful skills to have. I can communicate very precisely results and thoughts, with a very good
-									level of english both in oral and written tasks.</p>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-university"></span>
-							<div class="content">
-								<h3>Mathematics & Computer Sciece</h3>
-								<p>As a AI student both in my bachelor and master, i have a profound knowledge in AI with a
-									good background in mathematics.</p>
-							</div>
-						</article>
-					</div>
-				</section>
+  <!-- ═══════════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label"><span class="mono cyan">02.</span> tech stack</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-block glass-card">
+          <h3><i class="fas fa-robot cyan"></i> AI &amp; LLMs</h3>
+          <div class="tags">
+            <span class="tag">LangGraph</span><span class="tag">LangChain</span>
+            <span class="tag">RAG Pipelines</span><span class="tag">ReAct Agents</span>
+            <span class="tag">Prompt Engineering</span><span class="tag">Tool Calling</span>
+            <span class="tag">SSE Streaming</span><span class="tag">MCP Protocol</span>
+            <span class="tag">LoRA Fine-tuning</span><span class="tag">BERTopic</span>
+            <span class="tag">In-context Learning</span>
+          </div>
+        </div>
+        <div class="skill-block glass-card">
+          <h3><i class="fas fa-database cyan"></i> Vector &amp; Retrieval</h3>
+          <div class="tags">
+            <span class="tag">Milvus</span><span class="tag">ChromaDB</span>
+            <span class="tag">Qdrant</span><span class="tag">Weaviate</span>
+            <span class="tag">Cross-Encoder Reranking</span>
+            <span class="tag">Semantic Search</span><span class="tag">Embeddings</span>
+          </div>
+        </div>
+        <div class="skill-block glass-card">
+          <h3><i class="fas fa-server cyan"></i> Backend &amp; Infra</h3>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span>
+            <span class="tag">Django</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span><span class="tag">AWS S3</span>
+            <span class="tag">Prisma</span><span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-block glass-card">
+          <h3><i class="fas fa-brain cyan"></i> ML &amp; Vision</h3>
+          <div class="tags">
+            <span class="tag">PyTorch</span><span class="tag">HuggingFace</span>
+            <span class="tag">Transformers</span><span class="tag">Vision Transformers</span>
+            <span class="tag">CNNs</span><span class="tag">NER</span>
+            <span class="tag">SentenceTransformers</span>
+          </div>
+        </div>
+        <div class="skill-block glass-card">
+          <h3><i class="fas fa-laptop-code cyan"></i> Frontend</h3>
+          <div class="tags">
+            <span class="tag">Next.js</span><span class="tag">React</span>
+            <span class="tag">React Native</span><span class="tag">TypeScript</span>
+            <span class="tag">CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-block glass-card">
+          <h3><i class="fas fa-magic cyan"></i> LLM Providers</h3>
+          <div class="tags">
+            <span class="tag">Gemini</span><span class="tag">OpenAI</span>
+            <span class="tag">Claude</span><span class="tag">Vertex AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Experience</h2>
-					</header>
-					<div class="posts">
-						<article>
-							<a href="https://menew.ir/" class="image"><img src="images/cern-logo.png" alt="image" /></a>
-							<h3>Software Engineer</h3>
-							<p>
-							<p>
-								As a Front-End Developer at MeNew, I focused on creating responsive, user-friendly interfaces and
-								improving the overall experience of the platform through modern React-based development.
-							</p>
-							</p>
-							<ul class="actions">
-							</ul>
-						</article>
-						<!-- <article>
-							<a href="https://www.unipd.it/en/stat" class="image"><img src="images/unipd-logo.png" alt="" /></a>
-							<h3>Package Developer</h3>
-							<p>R library for diffusion model analysis. DIMORA (DIffusion MOdels R Analysis) is a statistical package
-								that allows the analysis of diffusion data using different models, among the most used and useful. The
-								need for this package arises from the lack of a similar tool in R, the idea is therefore to provide a
-								platform that allows the most in-depth analysis of the diffusion data.</p>
-							<ul class="actions">
-							</ul>
-						</article> -->
+  <!-- ═══════════════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label"><span class="mono cyan">03.</span> work history</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline-wrap">
 
-					</div>
-				</section>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass-card">
+            <div class="tl-header">
+              <div>
+                <h3>AI Engineer</h3>
+                <a href="https://pet24-7.com" target="_blank" rel="noopener" class="tl-company">Pet24-7 · London <i class="fas fa-external-link-alt" style="font-size:9px;margin-left:3px;opacity:0.7"></i></a>
+              </div>
+              <span class="tl-date mono">2023 — Present</span>
+            </div>
+            <p>
+              Designed and shipped three production AI systems from scratch: a full RAG veterinary
+              chatbot serving real users daily, a LangGraph-based agentic platform with 7 pluggable
+              tools, and an analytics dashboard with NER and topic modeling pipelines. Also built
+              and deployed cross-platform mobile apps — live on both stores.
+            </p>
+            <div class="tags" style="margin-top:16px">
+              <span class="tag">LangGraph</span><span class="tag">RAG</span>
+              <span class="tag">FastAPI</span><span class="tag">Milvus</span>
+              <span class="tag">ChromaDB</span><span class="tag">React Native</span>
+              <span class="tag">Docker</span><span class="tag">PostgreSQL</span>
+            </div>
+            <div class="app-links">
+              <a href="https://apps.apple.com/au/app/pet24-7/id6743768959" class="app-badge" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> App Store
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.pet247.vetassist" class="app-badge" target="_blank" rel="noopener">
+                <i class="fab fa-google-play"></i> Google Play
+              </a>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Projects</h2>
-					</header>
-					<div class="posts">
-						<article>
-							<a href="https://arxiv.org/pdf/2412.10402" class="image"><img src="images/tango.png" alt="" /></a>
-							<h3>Improving Zero-Shot Multi-Object Navigation by Enhancing Object Detection in LLM-Based Embodied AI
-								Frameworkv</h3>
-							<p>Reconstruction of visual stimuli of a zebra fish, given the neuron response at a certain time. This was
-								done using gradient ascent tecniques given a certain log-likelihood. </p>
-							<ul class="actions">
-								<li><a href="https://github.com/mohammjavad123/thesis-llm-embodied-ai" class="button">PDF</a></li>
-								<li><a
-										href="https://github.com/mohammjavad123/thesis-llm-embodied-ai/blob/master/Thesis_abstract%20.pdf"
-										class="button">Abstract</a></li>
-							</ul>
-						</article>
-						<article>
-							<a href="https://github.com/mohammjavad123/NLP" class="image"><img src="images/nlp2.ppm" alt="" /></a>
-							<h3>Sentiment and Topic Analysis of Tech Product Reviews</h3>
-							<p>Built a robust sentiment analysis pipeline by fine-tuning Transformer models and deep learning
-								architectures.
-								Explored the impact of pre-trained word embeddings on representation quality using the Amazon
-								Electronics
-								5-core dataset. Employed focal loss and stratified splitting to mitigate class imbalance, and applied
-								LDA, NMF,
-								and BERTopic to uncover latent semantic themes linked to sentiment patterns.</p>
-							<ul class="actions">
-								<li><a href="https://github.com/mohammjavad123/NLP" class="button">Project</a></li>
-								<li><a href="https://github.com/mohammjavad123/NLP/blob/main/NLP_project.pdf" class="button">report</a>
-								</li>
-							</ul>
-						</article>
-						<article>
-							<a href="https://github.com/mohammjavad123/Comparative-Evaluation-of-Object-Detection-Models"
-								class="image"><img src="images/object-detection.png" alt="" /></a>
-							<h3>Comparative-Evaluation-of-Object-Detection-Models</h3>
-							<p>Conducted a comparative study of CNN and transformer-based object detectors on PASCAL VOC. Fine-tuned
-								ViT models and evaluated RF-DETR for real-time detection, chosen for its deformable attention and fast
-								convergence. Assessed zero-shot generalization with OWL-ViT2, highlighting trade-offs between supervised
-								accuracy and open-vocabulary flexibility.</p>
-							<ul class="actions">
-								<li><a href="https://github.com/mohammjavad123/Comparative-Evaluation-of-Object-Detection-Models"
-										class="button">Code</a></li>
-								<li><a href="https://github.com/mohammjavad123/NLP/blob/main/NLP_project.pdf" class="button">report</a>
-								</li>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass-card">
+            <div class="tl-header">
+              <div>
+                <h3>Full-Stack Developer</h3>
+                <span class="tl-company">MeNEW</span>
+              </div>
+              <span class="tl-date mono">2022 — 2023</span>
+            </div>
+            <p>
+              Built and maintained the main web platform end-to-end — Next.js frontend and Django
+              REST backend. Set up CI/CD pipelines, contributed across the full stack from
+              database schema to UI components.
+            </p>
+            <div class="tags" style="margin-top:16px">
+              <span class="tag">Next.js</span><span class="tag">Django</span>
+              <span class="tag">CI/CD</span><span class="tag">PostgreSQL</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+        </div>
 
-							</ul>
-						</article>
-						<article>
-							<a href="https://github.com/mohammjavad123/computer-vision" class="image"><img
-									src="images/image_colourization.jpg" alt="" /></a>
-							<h3>• Image Colorization with Conditional GANs and Pretrained U-Net</h3>
-							<p>Implemented a conditional GAN framework for automatic image colorization, using a U-Net generator and
-								PatchGAN discriminator. Trained on ImageNet samples in the Lab color space to predict color channels
-								from
-								grayscale inputs. Integrated and fine-tuned a pre-trained ResNet18 backbone in the U-Net encoder to
-								enhance
-								feature extraction and output realism. Balanced GAN and L1 losses to improve visual fidelity and reduce
-								artifacts.
-							</p>
-							<ul class="actions">
-								<li><a href="https://github.com/mohammjavad123/computer-vision" class="button">Code</a>
-								</li>
-								<li><a
-										href="https://github.com/mohammjavad123/computer-vision/blob/main2/Image_Colorization_using_Conditional_Generative_Adversarial_Networks.pdf"
-										class="button">report</a></li>
-							</ul>
-						</article>
+      </div>
+    </div>
+  </section>
 
-						<article>
-							<a href="https://arxiv.org/pdf/2106.09685" class="image"><img src="images/lora.png" alt="" /></a>
-							<h3>LLM Pruning and Fine-Tuning for Efficient Text Summarization</h3>
-							<p>Applied SparseGPT pruning to compress large language models, reducing parameters and computational
-								cost
-								while preserving baseline performance; leveraged LoRA fine-tuning to adapt the pruned model to
-								downstream
-								tasks, achieving significant improvements in perplexity and task-specific performance with minimal
-								additional
-								parameters..</p>
-							<ul class="actions">
-								<li><a href="https://github.com/mohammjavad123/LLM_Pruning_and_Fine_tuning_with_LORA"
-										class="button">Code</a></li>
-								<li><a href="https://arxiv.org/pdf/2106.09685" class="button">Paper</a></li>
-							</ul>
-						</article>
+  <!-- ═══════════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label"><span class="mono cyan">04.</span> what i've built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
 
+        <!-- VetAssist RAG -->
+        <div class="proj-card glass-card">
+          <div class="proj-img prod-banner banner-rag">
+            <div class="banner-code">
+              <span class="c-k">retriever</span> <span class="c-op">=</span> MilvusRetriever()<br>
+              <span class="c-k">reranker</span> <span class="c-op">=</span> CrossEncoderReranker()<br>
+              <span class="c-k">docs</span> <span class="c-op">=</span> reranker.rank(retriever.query(q))
+            </div>
+            <span class="banner-tag">Production · Live</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-robot"></i></div>
+              <div class="proj-links">
+                <span class="proj-badge live">Production</span>
+                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener" title="Pet24-7"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3>VetAssist — Production RAG Chatbot</h3>
+            <p>
+              End-to-end retrieval-augmented generation pipeline for a veterinary AI assistant.
+              Handles semantic retrieval from ChromaDB, cross-encoder reranking for precision,
+              per-vet episodic memory with vector embeddings, multimodal OCR ingestion for PDFs
+              and images, dual streaming paths (SSE + async queue bridge), and a two-tier typed
+              query preparation layer. Serves real users daily across pet-owner and vet flows.
+            </p>
+            <div class="tags">
+              <span class="tag">FastAPI</span><span class="tag">ChromaDB</span>
+              <span class="tag">Cross-encoder Reranking</span><span class="tag">SSE Streaming</span>
+              <span class="tag">PostgreSQL</span><span class="tag">Gemini</span>
+              <span class="tag">Episodic Memory</span>
+            </div>
+          </div>
+        </div>
 
-						<article>
-							<a href="https://github.com/mohammjavad123/Digital_Menu" class="image">
-								<img src="images/digm.jpg" alt="" style="width:70%; height:auto; margin:0 auto; display:block;" />
-							</a>
+        <!-- Agentic AI -->
+        <div class="proj-card glass-card">
+          <div class="proj-img prod-banner banner-agent">
+            <div class="banner-code">
+              <span class="c-k">agent</span> <span class="c-op">=</span> create_react_agent(llm, tools)<br>
+              <span class="c-k">async for</span> event <span class="c-op">in</span> agent.astream_events(...):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-k">yield</span> event
+            </div>
+            <span class="banner-tag">Production · Live</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-network-wired"></i></div>
+              <div class="proj-links">
+                <span class="proj-badge live">Production</span>
+                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener" title="Pet24-7"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3>Agentic AI Platform</h3>
+            <p>
+              LangGraph ReAct agent replacing a fixed RAG pipeline with dynamic multi-step
+              reasoning. Wires 7 pluggable tools: KB retriever, quick PostgreSQL history cache,
+              semantic Milvus history search, OCR document extractor, uploaded document store,
+              image generator, and PDF exporter. Includes a 3-checkpoint JSON + semantic policy
+              enforcer and three thinking modes (quick / balanced / deep) that control ReAct
+              iteration depth. Streams via native <code>astream_events</code>.
+            </p>
+            <div class="tags">
+              <span class="tag">LangGraph</span><span class="tag">Milvus</span>
+              <span class="tag">FastMCP</span><span class="tag">ReAct</span>
+              <span class="tag">astream_events</span><span class="tag">SentenceTransformers</span>
+              <span class="tag">Policy Enforcer</span>
+            </div>
+          </div>
+        </div>
 
-							<h3>Digital Menu – Interactive Food Ordering App</h3>
-							<p>A mobile application built with React Native that allows restaurants to showcase their menu digitally.
-								The app features category-based navigation, detailed item views with images and prices, a shopping cart
-								system, order management, and user authentication. It integrates with a Strapi backend for data and
-								media storage, supporting real-time updates and image uploads.</p>
-							<ul class="actions">
-								<li><a href="https://github.com/mohammjavad123/Digital_Menu" class="button">Project</a></li>
-								<li><a href="https://github.com/mohammjavad123/digital-menu-back-end" class="button">Back_end</a></li>
+        <!-- AI Metrics Dashboard -->
+        <div class="proj-card glass-card">
+          <div class="proj-img">
+            <img src="images/data-science.png" alt="AI Metrics Dashboard" loading="lazy">
+            <span class="banner-tag">Production · Live</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="proj-links">
+                <span class="proj-badge live">Production</span>
+                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener" title="Pet24-7"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <h3>AI Metrics Dashboard</h3>
+            <p>
+              Analytics platform for monitoring VetAssist usage. Two-layer NER pipeline:
+              layer 1 is a curated veterinary dictionary matcher, layer 2 is a biomedical
+              token classifier that catches entities not covered by layer 1.
+              BERTopic for latent topic discovery across conversations.
+              Country-level usage insights and real-time engagement metrics.
+              Zero-config Docker deployment.
+            </p>
+            <div class="tags">
+              <span class="tag">Two-layer NER</span><span class="tag">BERTopic</span>
+              <span class="tag">HuggingFace</span><span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
 
-								<!-- <li><a href="images/FPGA_FIR_Filter.pdf" class="button">Paper</a></li> -->
-							</ul>
-						</article>
-					</div>
-				</section>
+        <!-- RAG Benchmark -->
+        <div class="proj-card glass-card">
+          <div class="proj-img prod-banner banner-bench">
+            <div class="banner-code">
+              <span class="c-k">for</span> db <span class="c-op">in</span> [Milvus, Qdrant, Weaviate]:<br>
+              &nbsp;&nbsp;results[db] <span class="c-op">=</span> runner.run_concurrent(db, threads=8)<br>
+              compare_latency_quality(results)
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-flask cyan"></i></div>
+            </div>
+            <h3>RAG Vector DB Benchmark</h3>
+            <p>
+              Systematic head-to-head evaluation of Milvus, Qdrant, and Weaviate for RAG workloads.
+              Uses RecursiveCharacterTextSplitter (chunk size 1000, overlap 200) for consistent
+              chunking across all databases. Measures single-query latency, batch throughput,
+              and concurrent load (up to 8 threads). Reports retrieval quality alongside
+              performance to give a complete picture for production selection.
+            </p>
+            <div class="tags">
+              <span class="tag">Milvus</span><span class="tag">Qdrant</span>
+              <span class="tag">Weaviate</span><span class="tag">RecursiveCharacterTextSplitter</span>
+              <span class="tag">Concurrent Testing</span>
+            </div>
+          </div>
+        </div>
 
-			</div>
-		</div>
-		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
+        <!-- Thesis -->
+        <div class="proj-card glass-card">
+          <div class="proj-img">
+            <img src="images/tango.png" alt="LLM Tool Orchestration Thesis" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-graduation-cap"></i></div>
+              <a href="https://github.com/mohammjavad123/thesis-llm-embodied-ai" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <h3>Thesis — LLM Tool Orchestration for Navigation</h3>
+            <p>
+              MSc thesis: leveraging LLMs to generate executable code that composes vision modules
+              as callable tools for multi-object navigation tasks. The LLM acts as a reasoning engine —
+              given a navigation goal, it writes Python that chains detection, depth, and localization
+              modules to form a plan. Extends the ViperGPT paradigm with prompt engineering,
+              few-shot in-context examples, and a ReAct-style reasoning loop for embodied agents.
+            </p>
+            <div class="tags">
+              <span class="tag">LLM Code Generation</span><span class="tag">Tool Orchestration</span>
+              <span class="tag">Prompt Engineering</span><span class="tag">Few-shot Learning</span>
+              <span class="tag">ReAct</span>
+            </div>
+          </div>
+        </div>
 
-				<!-- Search -->
-				<section id="search" class="alt">
-					<form method="post" action="#">
-						<input type="text" name="query" id="query" placeholder="Search" />
-					</form>
-				</section>
+        <!-- Sentiment / NLP -->
+        <div class="proj-card glass-card">
+          <div class="proj-img">
+            <img src="images/sentiment.png" alt="Sentiment and Topic Analysis" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-comments"></i></div>
+              <div class="proj-links">
+                <a href="https://github.com/mohammjavad123/NLP" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/mohammjavad123/NLP/blob/main/NLP_project.pdf" class="icon-link" target="_blank" rel="noopener" aria-label="Report">
+                  <i class="fas fa-file-pdf"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Sentiment &amp; Topic Analysis of Product Reviews</h3>
+            <p>
+              Built a complete sentiment analysis pipeline on Amazon Electronics reviews (5-core dataset).
+              Fine-tuned BERT and RoBERTa-based transformer models using stratified splitting and focal
+              loss to handle severe class imbalance. Applied LDA, NMF, and BERTopic to uncover latent
+              semantic themes and linked them to sentiment patterns for richer product insight.
+            </p>
+            <div class="tags">
+              <span class="tag">Transformers</span><span class="tag">BERT</span>
+              <span class="tag">BERTopic</span><span class="tag">LDA</span>
+              <span class="tag">NMF</span><span class="tag">Focal Loss</span>
+            </div>
+          </div>
+        </div>
 
-				<!-- Menu 
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav> -->
+        <!-- Vision / Object Detection -->
+        <div class="proj-card glass-card">
+          <div class="proj-img">
+            <img src="images/object-detection.png" alt="Object Detection Models" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-eye"></i></div>
+              <div class="proj-links">
+                <a href="https://github.com/mohammjavad123/Comparative-Evaluation-of-Object-Detection-Models" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Vision Transformers &amp; Object Detection</h3>
+            <p>
+              Comparative study of CNN and transformer-based object detectors on PASCAL VOC.
+              Fine-tuned Vision Transformer (ViT) models for supervised detection and evaluated
+              RF-DETR — chosen for its deformable attention and fast convergence. Assessed
+              zero-shot generalization with OWL-ViT2, highlighting trade-offs between supervised
+              accuracy and open-vocabulary flexibility across architectures.
+            </p>
+            <div class="tags">
+              <span class="tag">Vision Transformers</span><span class="tag">RF-DETR</span>
+              <span class="tag">OWL-ViT2</span><span class="tag">PASCAL VOC</span>
+              <span class="tag">Fine-tuning</span>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section> -->
+        <!-- LLM Pruning -->
+        <div class="proj-card glass-card">
+          <div class="proj-img">
+            <img src="images/lora.png" alt="LLM Pruning and LoRA" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-microchip"></i></div>
+              <div class="proj-links">
+                <a href="https://github.com/mohammjavad123/LLM_Pruning_and_Fine_tuning_with_LORA" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3>LLM Pruning + LoRA Fine-Tuning</h3>
+            <p>
+              Applied SparseGPT pruning to compress large language models — significantly reducing
+              parameter count and compute cost while preserving near-baseline perplexity. Then used
+              LoRA (Low-Rank Adaptation) to adapt the pruned model for downstream text summarization,
+              achieving strong task performance with a fraction of trainable parameters.
+            </p>
+            <div class="tags">
+              <span class="tag">SparseGPT</span><span class="tag">LoRA</span>
+              <span class="tag">HuggingFace</span><span class="tag">PyTorch</span>
+              <span class="tag">Model Compression</span>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section -->
-				<section>
-					<header class="major">
-						<h2>Personal Info</h2>
-					</header>
-					<p>Finishing my master degree in Computer Science at University of Padua.</p>
-					<ul class="contact">
-						<li class="icon solid fa-envelope">
-							<a href="mailto:mohammadkazem.rajabi@studenti.unipd.it">
-								mohammadkazem.rajabi@unipd.it
-							</a>
-						</li>
-						<li class="icon solid fa-phone">(+39) 3894389992</li>
-						<li class="icon solid fa-home">Padova, Italy<br />
-						<li class="icon solid fa-search">LinkedIn, Github<br />
-						</li>
-					</ul>
-				</section>
+        <!-- GAN Colorization -->
+        <div class="proj-card glass-card">
+          <div class="proj-img">
+            <img src="images/image_colourization.jpg" alt="Image Colorization" loading="lazy">
+          </div>
+          <div class="proj-body">
+            <div class="proj-meta">
+              <div class="proj-icon"><i class="fas fa-paint-brush"></i></div>
+              <div class="proj-links">
+                <a href="https://github.com/mohammjavad123/computer-vision" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://github.com/mohammjavad123/computer-vision/blob/main2/Image_Colorization_using_Conditional_Generative_Adversarial_Networks.pdf" class="icon-link" target="_blank" rel="noopener" aria-label="Report">
+                  <i class="fas fa-file-pdf"></i>
+                </a>
+              </div>
+            </div>
+            <h3>Image Colorization — Conditional GANs</h3>
+            <p>
+              Implemented a conditional GAN framework for automatic image colorization. U-Net
+              generator with a ResNet18 pretrained backbone in the encoder for rich feature
+              extraction, and a PatchGAN discriminator for local realism. Trained on ImageNet
+              samples in Lab color space, predicting ab channels from grayscale L input.
+              Combined GAN adversarial loss with L1 pixel-wise loss to balance realism and
+              color accuracy.
+            </p>
+            <div class="tags">
+              <span class="tag">GANs</span><span class="tag">U-Net</span>
+              <span class="tag">PatchGAN</span><span class="tag">ResNet18</span>
+              <span class="tag">PyTorch</span><span class="tag">Lab Color Space</span>
+            </div>
+          </div>
+        </div>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<p class="copyright">&copy; All rights reserved. </p>
-					<p class="copyright">&copy; CCA 3.0 license</p>
-				</footer>
+      </div>
+    </div>
+  </section>
 
-			</div>
-		</div>
+  <!-- ═══════════════════════════════════════════════
+       GITHUB
+  ═══════════════════════════════════════════════ -->
+  <section id="github">
+    <div class="section-inner">
+      <p class="section-label"><span class="mono cyan">05.</span> open source</p>
+      <h2 class="section-title">GitHub Activity</h2>
+      <div class="github-grid">
+        <div class="github-card glass-card">
+          <img src="https://github-readme-stats.vercel.app/api?username=mohammjavad123&show_icons=true&theme=transparent&hide_border=true&title_color=00aaff&text_color=b8c4d4&icon_color=00aaff&bg_color=00000000&count_private=true" alt="GitHub Stats" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="github-card glass-card">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammjavad123&layout=compact&theme=transparent&hide_border=true&title_color=00aaff&text_color=b8c4d4&bg_color=00000000&langs_count=6" alt="Top Languages" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="github-streak glass-card">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammjavad123&theme=transparent&hide_border=true&ring=00aaff&fire=00aaff&currStreakLabel=00aaff&sideLabels=b8c4d4&dates=44566a&background=00000000" alt="GitHub Streak" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+      </div>
+      <div class="contrib-wrap glass-card">
+        <p class="contrib-title"><i class="fas fa-calendar-alt cyan"></i> Contribution Graph</p>
+        <img src="https://ghchart.rshah.org/00aaff/mohammjavad123" alt="Contribution Graph" class="contrib-graph" loading="lazy" onerror="this.parentElement.style.display='none'">
+        <p class="contrib-note mono">contribution activity · github.com/mohammjavad123</p>
+      </div>
+    </div>
+  </section>
 
-	</div>
+  <!-- ═══════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-inner contact-wrap">
+      <p class="section-label"><span class="mono cyan">05.</span> get in touch</p>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="contact-sub">
+        Open to AI engineering roles, research collaborations, and interesting problems.
+        Based in Amsterdam — happy to talk.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:javvadrajabi@gmail.com" class="contact-card glass-card">
+          <i class="fas fa-envelope cyan"></i>
+          <div><h4>Email</h4><span>javvadrajabi@gmail.com</span></div>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammadkazem-rajabi-3b5a121ab/" class="contact-card glass-card" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin cyan"></i>
+          <div><h4>LinkedIn</h4><span>Mohammad Rajabi</span></div>
+        </a>
+        <a href="https://github.com/mohammjavad123" class="contact-card glass-card" target="_blank" rel="noopener">
+          <i class="fab fa-github cyan"></i>
+          <div><h4>GitHub</h4><span>mohammjavad123</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+  <footer id="footer">
+    <span class="mono">Mohammad Rajabi &copy; 2025</span>
+    <span class="mono cyan">// AI Engineer · Amsterdam, NL</span>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
-
 </html>
