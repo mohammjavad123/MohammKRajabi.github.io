@@ -315,6 +315,10 @@ section { position: relative; z-index: 1; padding: 100px 0 72px; }
   align-items: baseline;
   gap: 2px;
 }
+.hstat-text {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
 .hstat-unit {
   font-family: var(--mono);
   font-size: 14px;
