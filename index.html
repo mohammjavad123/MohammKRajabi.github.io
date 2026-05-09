@@ -7,9 +7,9 @@
   <link rel="icon" href="images/logo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-  <link rel="stylesheet" href="assets/css/custom.css?v=2" />
+  <link rel="stylesheet" href="assets/css/custom.css?v=5" />
 </head>
 <body class="dark-mode">
 
@@ -48,7 +48,8 @@
         </div>
         <p class="hero-bio">
           Building production AI systems — RAG pipelines, LLM agents, and vector retrieval at scale.
-          2 years at <span class="cyan font-semibold">Pet24-7</span> (London), now based in
+          2 years of experience across AI and software engineering, currently at
+          <span class="cyan font-semibold">Pet24-7</span> (London). Based in
           <span class="cyan">Amsterdam, Netherlands</span>.
         </p>
         <div class="hero-cta">
@@ -123,7 +124,7 @@
             <div>
               <h4>MSc Computer Science</h4>
               <p>University of Padua, Italy</p>
-              <span class="mono cyan small">2022 — 2024</span>
+              <span class="mono cyan small">2022 — 2025 · GPA 105/110</span>
             </div>
           </div>
           <div class="info-card glass-card">
@@ -131,7 +132,7 @@
             <div>
               <h4>Amsterdam, Netherlands</h4>
               <p>Open to on-site &amp; remote roles</p>
-              <span class="mono cyan small">Available now</span>
+              <span class="mono cyan small">Zoekjaar visa · Available Jun 2026</span>
             </div>
           </div>
           <div class="info-card glass-card">
@@ -163,7 +164,6 @@
             <span class="tag">Prompt Engineering</span><span class="tag">Tool Calling</span>
             <span class="tag">SSE Streaming</span><span class="tag">MCP Protocol</span>
             <span class="tag">LoRA Fine-tuning</span><span class="tag">BERTopic</span>
-            <span class="tag">In-context Learning</span>
           </div>
         </div>
         <div class="skill-block glass-card">
@@ -206,6 +206,7 @@
           <div class="tags">
             <span class="tag">Gemini</span><span class="tag">OpenAI</span>
             <span class="tag">Claude</span><span class="tag">Vertex AI</span>
+            <span class="tag">Langfuse</span>
           </div>
         </div>
       </div>
@@ -221,59 +222,71 @@
       <h2 class="section-title">Experience</h2>
       <div class="timeline-wrap">
 
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content glass-card">
-            <div class="tl-header">
-              <div>
-                <h3>AI Engineer</h3>
-                <a href="https://pet24-7.com" target="_blank" rel="noopener" class="tl-company">Pet24-7 · London <i class="fas fa-external-link-alt" style="font-size:9px;margin-left:3px;opacity:0.7"></i></a>
-              </div>
-              <span class="tl-date mono">Jul 2025 — Present</span>
+        <!-- Pet24-7 -->
+        <div class="exp-card glass-card">
+          <div class="exp-header">
+            <div class="exp-header-left">
+              <h3>AI Engineer</h3>
+              <a href="https://pet24-7.com" target="_blank" rel="noopener" class="exp-company">
+                Pet24-7 · London <i class="fas fa-external-link-alt" style="font-size:9px;opacity:0.7"></i>
+              </a>
             </div>
-            <p>
-              Designed and shipped three production AI systems from scratch: a full RAG veterinary
-              chatbot serving real users daily, a LangGraph-based agentic platform with 7 pluggable
-              tools, and an analytics dashboard with NER and topic modeling pipelines. Also built
-              and deployed cross-platform mobile apps — live on both stores.
-            </p>
-            <div class="tags" style="margin-top:16px">
+            <span class="exp-date mono">Jul 2025 — Present</span>
+          </div>
+
+          <div class="exp-projects">
+            <div class="exp-project">
+              <div class="exp-project-label"><i class="fas fa-network-wired"></i> Agentic RAG Platform</div>
+              <p>LangGraph ReAct agent with 7 pluggable tools — KB retrieval, Milvus semantic history, OCR, PDF generation, image generator, and web search. Hybrid PostgreSQL + Milvus memory. MCP servers, 3-checkpoint policy enforcer, quick/balanced/deep thinking modes.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-label"><i class="fas fa-robot"></i> Production RAG Chatbot</div>
+              <p>End-to-end RAG pipeline with ChromaDB, cross-encoder reranking, per-vet episodic memory, multimodal OCR ingestion for PDFs and images, and real-time SSE streaming. Serving live users daily across pet-owner and vet flows.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-label"><i class="fas fa-chart-line"></i> AI Analytics Dashboard</div>
+              <p>NLP pipeline with two-layer NER (veterinary dictionary + biomedical token classifier) and BERTopic topic modeling. Real-time entity trends, co-occurrence analysis, and country-level insights via React + FastAPI.</p>
+            </div>
+            <div class="exp-project">
+              <div class="exp-project-label"><i class="fas fa-flask"></i> RAG Vector DB Benchmark</div>
+              <p>Head-to-head benchmark of Milvus, Qdrant, and Weaviate across chunking strategies, measuring latency, throughput, and retrieval quality to inform production vector store selection.</p>
+            </div>
+          </div>
+
+          <div class="exp-footer">
+            <div class="tags">
               <span class="tag">LangGraph</span><span class="tag">RAG</span>
-              <span class="tag">FastAPI</span><span class="tag">Milvus</span>
-              <span class="tag">ChromaDB</span><span class="tag">React Native</span>
+              <span class="tag">Milvus</span><span class="tag">FastAPI</span>
+              <span class="tag">ChromaDB</span><span class="tag">BERTopic</span>
               <span class="tag">Docker</span><span class="tag">PostgreSQL</span>
             </div>
             <div class="app-links">
-              <a href="https://apps.apple.com/au/app/pet24-7/id6743768959" class="app-badge" target="_blank" rel="noopener">
+              <a href="https://apps.apple.com/it/app/pet-24-7/id6749587810?l=en-GB" class="app-badge" target="_blank" rel="noopener">
                 <i class="fab fa-apple"></i> App Store
               </a>
-              <a href="https://play.google.com/store/apps/details?id=com.pet247.vetassist" class="app-badge" target="_blank" rel="noopener">
+              <a href="https://play.google.com/store/apps/details?id=com.vetassist.app" class="app-badge" target="_blank" rel="noopener">
                 <i class="fab fa-google-play"></i> Google Play
               </a>
             </div>
           </div>
         </div>
 
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content glass-card">
-            <div class="tl-header">
-              <div>
-                <h3>Full-Stack Developer</h3>
-                <span class="tl-company">MeNEW</span>
-              </div>
-              <span class="tl-date mono">2022 — 2023</span>
+        <!-- MeNEW -->
+        <div class="exp-card-sm glass-card">
+          <div class="exp-sm-header">
+            <div>
+              <h3>Full-Stack Developer</h3>
+              <span class="exp-company">MeNEW · Part-time</span>
             </div>
-            <p>
-              Built and maintained the main web platform end-to-end — Next.js frontend and Django
-              REST backend. Set up CI/CD pipelines, contributed across the full stack from
-              database schema to UI components.
-            </p>
-            <div class="tags" style="margin-top:16px">
-              <span class="tag">Next.js</span><span class="tag">Django</span>
-              <span class="tag">CI/CD</span><span class="tag">PostgreSQL</span>
-              <span class="tag">TypeScript</span>
-            </div>
+            <span class="exp-date mono">Nov 2023 — Nov 2024</span>
+          </div>
+          <p>
+            Built and launched a full-stack digital menu platform using Next.js (TypeScript), Django REST API,
+            and GraphQL with CI/CD pipelines for automated testing and deployment.
+          </p>
+          <div class="tags">
+            <span class="tag">Next.js</span><span class="tag">Django</span>
+            <span class="tag">GraphQL</span><span class="tag">TypeScript</span><span class="tag">CI/CD</span>
           </div>
         </div>
 
@@ -288,13 +301,86 @@
     <div class="section-inner">
       <p class="section-label"><span class="mono cyan">04.</span> what i've built</p>
       <h2 class="section-title">Projects</h2>
+
+      <!-- ── FEATURED: Agentic RAG (phone mockup) ── -->
+      <div class="proj-feature glass-card">
+        <div class="phone-frame">
+          <div class="phone-shell">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="images/agentic.png" alt="VetAssist Agentic App">
+            </div>
+          </div>
+        </div>
+        <div class="proj-feature-body">
+          <span class="proj-live-badge">Production · Live</span>
+          <span class="proj-feature-label">LangGraph · ReAct · Milvus · MCP</span>
+          <h3>VetAssist — Agentic AI Platform</h3>
+          <p>
+            LangGraph ReAct agent replacing a fixed RAG pipeline with dynamic multi-step
+            reasoning. Wires 7 pluggable tools: KB retriever, fast PostgreSQL session cache,
+            semantic Milvus history search, OCR document extractor, document store,
+            image generator, and PDF exporter. 3-checkpoint policy enforcer and
+            quick/balanced/deep thinking modes controlling ReAct iteration depth.
+            Streamed via native <code style="font-family:var(--mono);font-size:12px;color:var(--cyan)">astream_events</code>.
+          </p>
+          <div class="tags">
+            <span class="tag">LangGraph</span><span class="tag">Milvus</span>
+            <span class="tag">FastMCP</span><span class="tag">ReAct</span>
+            <span class="tag">Policy Enforcer</span><span class="tag">Langfuse</span>
+          </div>
+          <div class="proj-feature-links">
+            <a href="https://apps.apple.com/it/app/pet-24-7/id6749587810?l=en-GB" class="proj-link-btn primary" target="_blank" rel="noopener">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.vetassist.app" class="proj-link-btn" target="_blank" rel="noopener">
+              <i class="fab fa-google-play"></i> Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FEATURED: AI Analytics Dashboard ── -->
+      <div class="proj-feature reverse glass-card">
+        <div class="proj-screen">
+          <div class="browser-bar">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-url">ai-metrics.pet24-7.com · VetAssist Analytics</div>
+          </div>
+          <img src="images/dash.png" alt="AI Metrics Dashboard" class="proj-screen-img">
+        </div>
+        <div class="proj-feature-body">
+          <span class="proj-live-badge">Production · Live</span>
+          <span class="proj-feature-label">NLP Analytics · BERTopic · NER</span>
+          <h3>AI Analytics Dashboard</h3>
+          <p>
+            End-to-end NLP analytics platform for monitoring VetAssist conversations.
+            Two-layer NER pipeline: a curated veterinary dictionary matcher backed by
+            a biomedical token classifier. BERTopic for latent topic discovery with
+            LLM-generated labels. Country-level usage insights, entity co-occurrence
+            graphs, and real-time engagement metrics.
+          </p>
+          <div class="tags">
+            <span class="tag">Two-layer NER</span><span class="tag">BERTopic</span>
+            <span class="tag">HuggingFace</span><span class="tag">FastAPI</span>
+            <span class="tag">React</span><span class="tag">Docker</span>
+          </div>
+          <div class="proj-feature-links">
+            <a href="https://pet24-7.com" class="proj-link-btn" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt"></i> Live
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Regular project grid ── -->
       <div class="projects-grid">
 
         <!-- VetAssist RAG -->
         <div class="proj-card glass-card">
           <div class="proj-img prod-banner banner-rag">
             <div class="banner-code">
-              <span class="c-k">retriever</span> <span class="c-op">=</span> MilvusRetriever()<br>
+              <span class="c-k">retriever</span> <span class="c-op">=</span> ChromaDBRetriever()<br>
               <span class="c-k">reranker</span> <span class="c-op">=</span> CrossEncoderReranker()<br>
               <span class="c-k">docs</span> <span class="c-op">=</span> reranker.rank(retriever.query(q))
             </div>
@@ -305,89 +391,18 @@
               <div class="proj-icon"><i class="fas fa-robot"></i></div>
               <div class="proj-links">
                 <span class="proj-badge live">Production</span>
-                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener" title="Pet24-7"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
             <h3>VetAssist — Production RAG Chatbot</h3>
             <p>
-              End-to-end retrieval-augmented generation pipeline for a veterinary AI assistant.
-              Handles semantic retrieval from ChromaDB, cross-encoder reranking for precision,
-              per-vet episodic memory with vector embeddings, multimodal OCR ingestion for PDFs
-              and images, dual streaming paths (SSE + async queue bridge), and a two-tier typed
-              query preparation layer. Serves real users daily across pet-owner and vet flows.
+              End-to-end RAG veterinary assistant with ChromaDB, cross-encoder reranking,
+              per-vet episodic memory, multimodal OCR, SSE streaming, and a two-tier typed query layer.
             </p>
             <div class="tags">
               <span class="tag">FastAPI</span><span class="tag">ChromaDB</span>
-              <span class="tag">Cross-encoder Reranking</span><span class="tag">SSE Streaming</span>
-              <span class="tag">PostgreSQL</span><span class="tag">Gemini</span>
+              <span class="tag">Cross-encoder</span><span class="tag">Gemini</span>
               <span class="tag">Episodic Memory</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Agentic AI -->
-        <div class="proj-card glass-card">
-          <div class="proj-img prod-banner banner-agent">
-            <div class="banner-code">
-              <span class="c-k">agent</span> <span class="c-op">=</span> create_react_agent(llm, tools)<br>
-              <span class="c-k">async for</span> event <span class="c-op">in</span> agent.astream_events(...):<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-k">yield</span> event
-            </div>
-            <span class="banner-tag">Production · Live</span>
-          </div>
-          <div class="proj-body">
-            <div class="proj-meta">
-              <div class="proj-icon"><i class="fas fa-network-wired"></i></div>
-              <div class="proj-links">
-                <span class="proj-badge live">Production</span>
-                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener" title="Pet24-7"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-            <h3>Agentic AI Platform</h3>
-            <p>
-              LangGraph ReAct agent replacing a fixed RAG pipeline with dynamic multi-step
-              reasoning. Wires 7 pluggable tools: KB retriever, quick PostgreSQL history cache,
-              semantic Milvus history search, OCR document extractor, uploaded document store,
-              image generator, and PDF exporter. Includes a 3-checkpoint JSON + semantic policy
-              enforcer and three thinking modes (quick / balanced / deep) that control ReAct
-              iteration depth. Streams via native <code>astream_events</code>.
-            </p>
-            <div class="tags">
-              <span class="tag">LangGraph</span><span class="tag">Milvus</span>
-              <span class="tag">FastMCP</span><span class="tag">ReAct</span>
-              <span class="tag">astream_events</span><span class="tag">SentenceTransformers</span>
-              <span class="tag">Policy Enforcer</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- AI Metrics Dashboard -->
-        <div class="proj-card glass-card">
-          <div class="proj-img">
-            <img src="images/data-science.png" alt="AI Metrics Dashboard" loading="lazy">
-            <span class="banner-tag">Production · Live</span>
-          </div>
-          <div class="proj-body">
-            <div class="proj-meta">
-              <div class="proj-icon"><i class="fas fa-chart-line"></i></div>
-              <div class="proj-links">
-                <span class="proj-badge live">Production</span>
-                <a href="https://pet24-7.com" class="icon-link" target="_blank" rel="noopener" title="Pet24-7"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-            <h3>AI Metrics Dashboard</h3>
-            <p>
-              Analytics platform for monitoring VetAssist usage. Two-layer NER pipeline:
-              layer 1 is a curated veterinary dictionary matcher, layer 2 is a biomedical
-              token classifier that catches entities not covered by layer 1.
-              BERTopic for latent topic discovery across conversations.
-              Country-level usage insights and real-time engagement metrics.
-              Zero-config Docker deployment.
-            </p>
-            <div class="tags">
-              <span class="tag">Two-layer NER</span><span class="tag">BERTopic</span>
-              <span class="tag">HuggingFace</span><span class="tag">FastAPI</span>
-              <span class="tag">Docker</span>
             </div>
           </div>
         </div>
@@ -403,20 +418,16 @@
           </div>
           <div class="proj-body">
             <div class="proj-meta">
-              <div class="proj-icon"><i class="fas fa-flask cyan"></i></div>
+              <div class="proj-icon"><i class="fas fa-flask"></i></div>
             </div>
             <h3>RAG Vector DB Benchmark</h3>
             <p>
-              Systematic head-to-head evaluation of Milvus, Qdrant, and Weaviate for RAG workloads.
-              Uses RecursiveCharacterTextSplitter (chunk size 1000, overlap 200) for consistent
-              chunking across all databases. Measures single-query latency, batch throughput,
-              and concurrent load (up to 8 threads). Reports retrieval quality alongside
-              performance to give a complete picture for production selection.
+              Systematic evaluation of Milvus, Qdrant, and Weaviate for RAG workloads.
+              Measures latency, batch throughput, concurrent load (8 threads), and retrieval quality.
             </p>
             <div class="tags">
               <span class="tag">Milvus</span><span class="tag">Qdrant</span>
-              <span class="tag">Weaviate</span><span class="tag">RecursiveCharacterTextSplitter</span>
-              <span class="tag">Concurrent Testing</span>
+              <span class="tag">Weaviate</span><span class="tag">Benchmarking</span>
             </div>
           </div>
         </div>
@@ -429,22 +440,18 @@
           <div class="proj-body">
             <div class="proj-meta">
               <div class="proj-icon"><i class="fas fa-graduation-cap"></i></div>
-              <a href="https://github.com/mohammjavad123/thesis-llm-embodied-ai" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
+              <div class="proj-links">
+                <a href="https://github.com/mohammjavad123/thesis-llm-embodied-ai" class="icon-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+              </div>
             </div>
             <h3>Thesis — LLM Tool Orchestration for Navigation</h3>
             <p>
-              MSc thesis: leveraging LLMs to generate executable code that composes vision modules
-              as callable tools for multi-object navigation tasks. The LLM acts as a reasoning engine —
-              given a navigation goal, it writes Python that chains detection, depth, and localization
-              modules to form a plan. Extends the ViperGPT paradigm with prompt engineering,
-              few-shot in-context examples, and a ReAct-style reasoning loop for embodied agents.
+              MSc thesis: LLMs generating executable code to compose vision modules as callable
+              tools for multi-object navigation. ReAct-style reasoning loop with few-shot in-context examples.
             </p>
             <div class="tags">
-              <span class="tag">LLM Code Generation</span><span class="tag">Tool Orchestration</span>
-              <span class="tag">Prompt Engineering</span><span class="tag">Few-shot Learning</span>
-              <span class="tag">ReAct</span>
+              <span class="tag">LLM Code Gen</span><span class="tag">ReAct</span>
+              <span class="tag">Tool Orchestration</span><span class="tag">Few-shot</span>
             </div>
           </div>
         </div>
@@ -458,30 +465,23 @@
             <div class="proj-meta">
               <div class="proj-icon"><i class="fas fa-comments"></i></div>
               <div class="proj-links">
-                <a href="https://github.com/mohammjavad123/NLP" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://github.com/mohammjavad123/NLP/blob/main/NLP_project.pdf" class="icon-link" target="_blank" rel="noopener" aria-label="Report">
-                  <i class="fas fa-file-pdf"></i>
-                </a>
+                <a href="https://github.com/mohammjavad123/NLP" class="icon-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/mohammjavad123/NLP/blob/main/NLP_project.pdf" class="icon-link" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i></a>
               </div>
             </div>
             <h3>Sentiment &amp; Topic Analysis of Product Reviews</h3>
             <p>
-              Built a complete sentiment analysis pipeline on Amazon Electronics reviews (5-core dataset).
-              Fine-tuned BERT and RoBERTa-based transformer models using stratified splitting and focal
-              loss to handle severe class imbalance. Applied LDA, NMF, and BERTopic to uncover latent
-              semantic themes and linked them to sentiment patterns for richer product insight.
+              Fine-tuned BERT/RoBERTa on Amazon Electronics reviews with focal loss. Applied LDA, NMF,
+              and BERTopic to link latent themes to sentiment patterns.
             </p>
             <div class="tags">
-              <span class="tag">Transformers</span><span class="tag">BERT</span>
-              <span class="tag">BERTopic</span><span class="tag">LDA</span>
-              <span class="tag">NMF</span><span class="tag">Focal Loss</span>
+              <span class="tag">BERT</span><span class="tag">BERTopic</span>
+              <span class="tag">LDA</span><span class="tag">Focal Loss</span>
             </div>
           </div>
         </div>
 
-        <!-- Vision / Object Detection -->
+        <!-- Vision -->
         <div class="proj-card glass-card">
           <div class="proj-img">
             <img src="images/object-detection.png" alt="Object Detection Models" loading="lazy">
@@ -490,23 +490,17 @@
             <div class="proj-meta">
               <div class="proj-icon"><i class="fas fa-eye"></i></div>
               <div class="proj-links">
-                <a href="https://github.com/mohammjavad123/Comparative-Evaluation-of-Object-Detection-Models" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="https://github.com/mohammjavad123/Comparative-Evaluation-of-Object-Detection-Models" class="icon-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
               </div>
             </div>
             <h3>Vision Transformers &amp; Object Detection</h3>
             <p>
-              Comparative study of CNN and transformer-based object detectors on PASCAL VOC.
-              Fine-tuned Vision Transformer (ViT) models for supervised detection and evaluated
-              RF-DETR — chosen for its deformable attention and fast convergence. Assessed
-              zero-shot generalization with OWL-ViT2, highlighting trade-offs between supervised
-              accuracy and open-vocabulary flexibility across architectures.
+              Comparative study of ViT, RF-DETR, and OWL-ViT2 on PASCAL VOC.
+              Evaluated trade-offs between supervised accuracy and open-vocabulary flexibility.
             </p>
             <div class="tags">
-              <span class="tag">Vision Transformers</span><span class="tag">RF-DETR</span>
+              <span class="tag">ViT</span><span class="tag">RF-DETR</span>
               <span class="tag">OWL-ViT2</span><span class="tag">PASCAL VOC</span>
-              <span class="tag">Fine-tuning</span>
             </div>
           </div>
         </div>
@@ -520,22 +514,17 @@
             <div class="proj-meta">
               <div class="proj-icon"><i class="fas fa-microchip"></i></div>
               <div class="proj-links">
-                <a href="https://github.com/mohammjavad123/LLM_Pruning_and_Fine_tuning_with_LORA" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="https://github.com/mohammjavad123/LLM_Pruning_and_Fine_tuning_with_LORA" class="icon-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
               </div>
             </div>
             <h3>LLM Pruning + LoRA Fine-Tuning</h3>
             <p>
-              Applied SparseGPT pruning to compress large language models — significantly reducing
-              parameter count and compute cost while preserving near-baseline perplexity. Then used
-              LoRA (Low-Rank Adaptation) to adapt the pruned model for downstream text summarization,
-              achieving strong task performance with a fraction of trainable parameters.
+              SparseGPT pruning to compress LLMs while preserving near-baseline perplexity,
+              then LoRA adaptation for downstream summarization with a fraction of trainable parameters.
             </p>
             <div class="tags">
               <span class="tag">SparseGPT</span><span class="tag">LoRA</span>
-              <span class="tag">HuggingFace</span><span class="tag">PyTorch</span>
-              <span class="tag">Model Compression</span>
+              <span class="tag">PyTorch</span><span class="tag">Model Compression</span>
             </div>
           </div>
         </div>
@@ -549,27 +538,18 @@
             <div class="proj-meta">
               <div class="proj-icon"><i class="fas fa-paint-brush"></i></div>
               <div class="proj-links">
-                <a href="https://github.com/mohammjavad123/computer-vision" class="icon-link" target="_blank" rel="noopener" aria-label="GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://github.com/mohammjavad123/computer-vision/blob/main2/Image_Colorization_using_Conditional_Generative_Adversarial_Networks.pdf" class="icon-link" target="_blank" rel="noopener" aria-label="Report">
-                  <i class="fas fa-file-pdf"></i>
-                </a>
+                <a href="https://github.com/mohammjavad123/computer-vision" class="icon-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/mohammjavad123/computer-vision/blob/main2/Image_Colorization_using_Conditional_Generative_Adversarial_Networks.pdf" class="icon-link" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i></a>
               </div>
             </div>
             <h3>Image Colorization — Conditional GANs</h3>
             <p>
-              Implemented a conditional GAN framework for automatic image colorization. U-Net
-              generator with a ResNet18 pretrained backbone in the encoder for rich feature
-              extraction, and a PatchGAN discriminator for local realism. Trained on ImageNet
-              samples in Lab color space, predicting ab channels from grayscale L input.
-              Combined GAN adversarial loss with L1 pixel-wise loss to balance realism and
-              color accuracy.
+              U-Net + ResNet18 encoder with PatchGAN discriminator. Trained on ImageNet in Lab
+              color space. Combined adversarial + L1 loss for realism and color accuracy.
             </p>
             <div class="tags">
               <span class="tag">GANs</span><span class="tag">U-Net</span>
-              <span class="tag">PatchGAN</span><span class="tag">ResNet18</span>
-              <span class="tag">PyTorch</span><span class="tag">Lab Color Space</span>
+              <span class="tag">PatchGAN</span><span class="tag">PyTorch</span>
             </div>
           </div>
         </div>
@@ -609,7 +589,7 @@
   ═══════════════════════════════════════════════ -->
   <section id="contact">
     <div class="section-inner contact-wrap">
-      <p class="section-label"><span class="mono cyan">05.</span> get in touch</p>
+      <p class="section-label"><span class="mono cyan">06.</span> get in touch</p>
       <h2 class="section-title">Let's Work Together</h2>
       <p class="contact-sub">
         Open to AI engineering roles, research collaborations, and interesting problems.
